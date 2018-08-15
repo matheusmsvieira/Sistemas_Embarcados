@@ -1,0 +1,35 @@
+1. O que são sistemas embarcados?
+É uma combinação de hardware e software, podendo ter partes mecânicas e/ou elétricas, projetado para executar uma função específica.
+Diferencia-se de computadores de propósito geral, pois possui um objetivo específico pré-determinado. 
+Portanto, é um sistema microprocessado no qual o computador é completamente encapsulado ou dedicado ao sistema que ele controla.
+
+2. O que são sistemas microprocessados?
+É um sistema completamente encapsulado composto por unidade central de processamento e um conjunto de periféricos necessários ao
+seu funcionamento.
+
+3. Apresente aplicações de sistemas embarcados:
+	  (a) Para a indústria automotiva:
+    As montadoras investem muito capital a fim de equipar os veículos com o que há de mais moderno em sistemas eletrônicos, o que inclui
+itens de conforto, navegação e segurança. Entre esses dispositivos automotivos destaca-se:
+sistemas de GPS e navegação, controle de motor e injeção eletrônica, alarmes, controle de transmissão, sistemas em tempo real como freios
+ABS e airbags, controle de tração, sistemas de entretenimento e painel de instrumentos;
+	
+    (b) Para eletrodomésticos:
+  Estão muito presentes em controladores eletrônicos de eletrodomésticos tais como fornos micro-ondas, máquinas de lavar, aparelhos de TV
+  com controle remoto, DVD players, refrigeradores e aparelhos de ar condicionado mais modernos, etc.
+	
+	  (c) Para automação industrial.
+  Uma das grandes aplicações na automação industrial consiste na capacidade de monitoração remota de processos e máquinas.
+  
+  4. Cite arquiteturas possíveis e as diferenças entre elas.
+  Microcontroladores - PIC, AVR, MSP.
+  Processadores de propósito geral: GPPs - Intel, ARM, Athlon.
+  DSPs: Digital Signal Processors - TMS.
+  FPGAs: Field Programmable Gate Arrays.
+  ASICs: Application Specific Integrated Circuits.
+  SoCs - System-on-Chip.
+  MPSoCs: Multiple Processor System-on-Chip.
+  
+  5. Por que usamos o Raspberry Pi na disciplina, ao invés de outro system-on-chip?
+O Raspberry Pi é bastante focado na área educacional, é de baixo custo e é compatível com uma quantidade de sistemas operacionais muito
+grande, tais como, Raspbian, GNU/Linux, Android e XBMC.
