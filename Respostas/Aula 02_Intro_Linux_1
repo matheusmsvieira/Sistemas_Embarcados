@@ -1,0 +1,56 @@
+1- Porque o Linux recebeu esse nome?
+  O nome Linux surgiu da combinação de dois nomes: Linus é o nome do criador do Linux, Linus Torvald.E Unix que corresponde ao nome de um 
+  sistema operacional de grande porte.
+
+2- O que são daemons?
+  Um daemon, em sistemas operacionais multitarefa, corresponde a um programa de computador que executa como um processo e plano de fundo, 
+  ao invés de estar sob o conmtrole direto de um usuário interativo.
+  
+3- O que é shell?
+  Na computação, esse é um termo técnico considerado genericamente como a camada externa entre um usuário e o kernel de um sistema 
+  operacional. Geralmente usam uma interface de linha de comando ou interface gráfica de usuário.
+
+4- Por que é importante evitar executar o terminal como super-usuário?
+  Por que o super-usuário, ou root, tem acesso administrativo ao sistema e ao executar certas tarefas administrativas pode-se danificar o
+  seu sistema.
+  
+5- Qual botão do teclado completa o que o usuário escreve no terminal, de acordo com o contexto?
+  Essa função é realizada pela tecla tab.
+  
+6- Quais botões do teclado apresentam instruções escritas anteriormente?
+  Essa função pode ser realizada pelo comando ctrl+r ou ctrl+s, com auxílio das teclas cima ou baixo.
+  
+7- Apresente os respectivos comandos no terminal para: 
+(a) Obter mais informações sobre um comando: man [nome do comando]
+(b) apresentar uma listacom os aruivos dentro de uma pasta: ls
+(c) Apresentar o caminho completo da pasta: pwd
+(d) Trocar de pasta: cd [nome e local da pasta]
+(e) Criar uma pasta: mkdir [nome da pasta]
+(f) Apagar arquivos definitivamente: rm [nome e local do arquivo]
+(g) Apagar pastas definitivametne: rmdir [nome da pasta] ou rm -r
+(h) Copiar arquivos: cp [nome do arquivo] [nome e local de destino]
+(i) Copiar pastas: cp [nome da pasta] [nome e local de destino]
+(j) Mover arquivos: mv [nome do arquivo] [nome e local de destino]
+(k) Mover pastas: mv [nome da pasta] [local de destino]
+(l) Renomear pastas: mv [nome da pasta] [novo nome da pasta]
+(m) Apresentar o conteúdo de um arquivo: cat [nome do arquivo]
+(n) Apresentar o tipo de um arquivo: file [nome do arquivo]
+(o) Limpar a tela do terminal: clear ou ctrl+l
+(p) Encontrar ocorrências de palavras-chave em um arquivo-texto: grep -R [string procurada][diretório base]
+(q) Ordenar informações em um arquivo-texto: sort [opções][arquivo]
+   -b, Ignorar espaços em branco no início do arquivo
+   -d, Considerar apenas espaços e caracteres alfanuméricos
+   -f, Converter caracteres de caixa baixa para caixa alta
+   -g, Comparar de acordo com valores numéricos genéricos
+   -i, Considerar apenas caracteres imprimíveis
+   -M, Classificar por mês (JAN < … <  DEZ)
+   -n, Comparar de acordo com valores de string numérica
+   -o, Escreve o resultado em ARQUIVO em vez da saída padrão
+   -r, Ordem reversa
+   -c, Verificar se a entrada já está ordenada - neste caso, não ordenar.
+   -t  Especificar um delimitador de colunas para poder ordenar o arquivo por dados em uma coluna que não seja a primeira.
+   -u, Mostra apenas a primeira ocorrência de uma string, ou seja, elimina entradas duplicadas.
+   -k  Especificar o número num da coluna que será usada para classificar o arquivo. Por padrão, os separadores de campos são os espaços em branco ou tabulações.
+(r) Substituir ocorrências de palavras-chave em um arquivo-texto: sed -i 's/[palavra inicial]/[nova palavra]/' [nome do arquivo]
+(s) Conferir se dois arquivos são iguais: diff [arquivo1][arquivo2]
+(t) Escrever algo na tela: echo [string]
