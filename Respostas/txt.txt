@@ -1,1 +1,15 @@
-.
+.import RPi.GPIO as gpio
+import time
+
+gpio.setmode(gpio.BCM)
+
+gpio.setup(5, gpio.OUT)
+gpio.setup(23, gpio.IN, gpio.PUD_UP)
+
+while True:
+    if gpio.input(23) == gpio.LOW:
+        gpio.output (5, gpio.LOW)
+    else:
+        gpio.output (5, gpio.HIGH)
+        
+gpio.cleanup()
