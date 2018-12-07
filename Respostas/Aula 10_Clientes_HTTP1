@@ -1,0 +1,55 @@
+1. Especifique algumas portas importantes pré-definidas para o protocolo TCP/IP.
+20/21   TCP 		FTP (File Transfer Protocol - Protocolo de transferência de arquivo) - data port
+22 	TCP/UDP 	SSH
+23 	TCP/UDP 	TELNET
+25 	TCP/UDP 	SMTP
+53 	TCP/UDP 	DNS
+67/68 	UDP 		DHCP
+80 	TCP 		HTTP
+110 	TCP 		POP3
+123 	UDP 		NTP
+156 	TCP/UDP 	SQL
+143 			IMAP4
+161 	TCP/UDP 	SNMP
+179 	TCP 		BGP
+443 	TCP 		HTTPS
+1723 	TCP/UDP 	TUNEL PPTP
+1863 	TCP 		MSN
+3128 	TCP 		SQUID
+3389 	TCP 		TERMINAL SERVER
+
+2. Com relação a endereços IP, responda:
+
+(a) Qual é a diferença entre endereços IP externos e locais?
+	Endereço IP Externo é usado para identificar um	dispositivo conectado à rede mundial de computadores, a Internet. Trata-se de um endereço único, porém dinâmico, não existe mais de um computador com o mesmo endereço IP conectado, mas o IP do seu modem pode ser alterado.
+	Endereço IP interno é utilizado na identificação de um computador, tablet ou celular ligado à uma rede internet, também conhecida como Intranet. 
+
+(b) Como endereços IP externos são definidos? Quem os define?
+	São definidos pelo provedor de serviços de Internet (ISP).
+
+(c) Como endereços IP locais são definidos? Quem os define?
+	Pode ser configurado como fixo ou gerenciado pelo roteador.
+
+(d) O que é o DNS? Para que ele serve?
+	O Domain Name System (DNS) é um sistema de gerenciamento de nomes hierárquico e distribuído para computadores, serviços ou qualquer recurso conectado à Internet ou numa rede privada. São os responsáveis por localizar e traduzir para números IP os endereços dos sites digitados nos navegadores.
+
+3. Com relação à pilha de protocolos TCP/IP, responda:
+
+(a) O que são suas camadas? Para que servem?
+	O TCP/IP é um conjunto de protocolos dividido em quatro camadas. A divisão em camadas é um modo de garantir a integridade dos dados que trafegam pela rede. 
+
+(b) Quais são as camadas existentes? Para que servem?
+	O TCP/IP é um conjunto de protocolos dividido em quatro camadas: aplicação, transporte, rede e interface. Onde cada uma é responsável pela execução de tarefas distintas.
+
+(c) Quais camadas são utilizadas pela biblioteca de sockets?
+	Os sockets estão entre a camada de transporte e a de aplicações. Desse modo, conseguem fazer uma interface entre a aplicação e a rede de maneira bem transparente.
+
+(d) As portas usadas por servidores na função bind() se referem a qual camada?
+	Camada de aplicações.
+(e) Os endereços usados por clientes na função connect() se referem a qual camada?
+	Camada de transporte e rede.
+
+4. Qual é a diferença entre os métodos `GET` e `POST` no protocolo HTTP?
+	GET: Este método é utilizado quando se quer passar pequenas informações para realizar uma pesquisa ou apenas passar uma informação para outra página através da URL. Então tem função pura e simplesmente recupera um recurso existente no servidor. O seu resultado é "cacheável" pelo cliente, ou seja, fica no histórico do navegador.
+	POST: Este método utiliza a URI para envio de informações ao servidor. A URI não é retornável ao cliente, o que torna o método POST mais seguro, pois não expõe os dados enviados no navegador. Como não tem limite de capacidade para envio de informações, este método se torna melhor que o GET.
+
