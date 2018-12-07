@@ -1,0 +1,16 @@
+1 - Cite as vantagens e desvantagens das comunicação serial I2C.
+Vantagem: possibilita comunicação com diversos dispositivos utilizando poucos fios, além de ser possível que mais de um mestre controle os 
+escravos.
+Desvantagem: este protocolo  half-duplex pois utiliza apenas dois pinos, SDA que é o sinal de dados e SCL o clock.
+
+2 - Considere o caso em que a Raspberry Pi deve receber leituras analógico/digitais de um MSP430, e que a comunicação entre os dois é I2C. 
+É tecnicamente possível que o MSP430 mande os resultados da conversão A/D a qualquer hora, ou ele deve aguardar a Raspberry Pi fazer um
+pedido ao MSP430? Por quê?
+
+3 -  Se o Raspberry Pi tiver de se comunicar com dois dispositivos via I2C, como executar a comunicação com o segundo dispositivo?
+Para que a informação seja enviada, o dispositivo mestre deve informar aos dispositivos escravos o início da comunicação, ou "Start 
+condition". Neste caso o pino SCL deve estar em nível lógico alto e o pino SDA em nível lógico baixo. Quando isso ocorrer, todos os escravos
+estarão prontos para receber a primeira informação que é o endereço do escravo que comunicará com o mestre, junto com a operação que este 
+escravo desempenhará. Em situações em que houver mais de um mestre na comunicação, terá preferência o mestre que sinalizar mais rápido o 
+inicio de uma transmissão. Depois que o endereço é enviado, o escravo que tiver o endereço correspondente realizará a operação de leitura
+ou escrita da informação até que o dispositivo mestre envie uma "stop condition" para interromper a comunicação.
