@@ -1,0 +1,24 @@
+1. Com relação ao modelo cliente-servidor, responda:
+
+(a) Quais são as características básicas deste modelo?
+R - É um modelo de comunicação com sockets que possui sempre comunicação de duas vias
+
+(b) Quais são as características básicas do servidor?
+R - Aguarda passivamente e responde aos clientes (socket passivo).
+
+(c) Quais são as características básicas do cliente?
+R - Inicia a comunicação, então deve saber o endereço e a porta do servidor (socket ativo).
+
+2.  Com relação ao protocolo de comunicação da internet, responda:
+(a) O que são protocolos de comunicação?
+R - Um conjunto de regras que controla a comunicação para que seja eficiente e sem erros. Um dos seus principais objetivos consiste em detectar e evitar a perda de dados ao longo da transmissão deles.
+
+(b) Quais são as características básicas de protocolos de comunicação?
+R - Definem como iniciar e finalizar uma mensagem, formatar, detectar uma perda, o término de uma sessão ou de conexão.
+
+3. Com relação ao protocolo TCP, responda:
+(a) O que são portas no protocolo TCP?
+R - Funcionam como endereçamentos do servidor para que todas as informações enviadas e recebidas cheguem até o local.
+
+(b) Para que servem estas portas?
+R - Servem para realizar diversos processos relacionados a comunicação usando apenas o endereço IP.
