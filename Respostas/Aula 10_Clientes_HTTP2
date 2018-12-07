@@ -1,0 +1,38 @@
+1. Utilize o programa criado pelo professor para baixar as páginas principais dos seguintes sites:
+
+(a) www.google.com
+HTTP/1.1 302 Found Location: http://www.google.com.br/?gws_rd=cr&dcr=0&ei=LJe8Wa6GMsW_wAS2q6XwCw Cache-Control: private Content-Type: text/html; charset=UTF-8 P3P: CP="This is not a P3P policy! See https://www.google.com/support/accounts/answer/151657?hl=en for more info." Date: Sat, 16 Sep 2017 03:14:52 GMT Server: gws Content-Length: 272 X-XSS-Protection: 1; mode=block X-Frame-Options: SAMEORIGIN Set-Cookie: NID=112=IkXqGyjX64wfmdfyWPnq0eR_J6bnUnzuQBWuty7I4pu1nCuDUp0t0meQ1b-COV2QHJv443njjbnrjMErmldpWq_FcruXpF3P3lZqR1E-WYN9dZpSxyu01XWjgXqNqjjP; expires=Sun, 18-Mar-2018 03:14:52 GMT; path=/; domain=.google.com; HttpOnly
+302 Moved
+The document has moved here. 
+
+(b) www.google.com.br
+HTTP/1.1 200 OK Date: Sat, 16 Sep 2017 03:20:27 GMT Expires: -1 Cache-Control: private, max-age=0 Content-Type: text/html; charset=ISO-8859-1 P3P: CP="This is not a P3P policy! See https://www.google.com/support/accounts/answer/151657?hl=en for more info." Server: gws X-XSS-Protection: 1; mode=block X-Frame-Options: SAMEORIGIN Set-Cookie: NID=112=wsFv7gkjUYTtCK4eWp4g5njjj4w63TqvI2f81FnIxmE8nzqN3bF0J0XL45G7Fo-pExXMtLHOwQj55KIzCFGACjQugmFoCOLSGPvhUaZyaLODzQzI0pgUMQbcL3f7tLi_; expires=Sun, 18-Mar-2018 03:20:27 GMT; path=/; domain=.google.com.br; HttpOnly Accept-Ranges: none Vary: Accept-Encoding Transfer-Encoding: chunked 2b6a  
+
+(c) www.unb.br
+HTTP/1.1 200 OK
+Date: Sat, 16 Sep 2017 03:13:27 GMT
+Server: Apache
+Referrer-Policy: origin
+Upgrade-Insecure-Requests: 0
+Referrer-Policy: origin
+Upgrade-Insecure-Requests: 0
+Expires: Wed, 17 Aug 2005 00:00:00 GMT
+Last-Modified: Sat, 16 Sep 2017 03:13:29 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Type: text/html; charset=utf-8
+Set-Cookie: 3ec986f4f850e1d0bdcd00fd24b0c473=fddaca15e0f316bdfaf1492ee35f5a95; path=/; HttpOnly
+Content-Length: 66741
+
+(d) [fga.unb.br](fga.unb.br)
+HTTP/1.1 301 Moved Permanently Server: nginx/1.6.2 Date: Sat, 16 Sep 2017 00:07:58 GMT Content-Type: text/html Content-Length: 184 Connection: keep-alive Location: https://fga.unb.br/ Strict-Transport-Security: max-age=15768000
+301 Moved Permanently
+nginx/1.6.2
+
+Comente os resultados obtidos para cada página, em termos das respostas HTTP e HTML obtidas
+
+(a) Página com erro redirecionando para outro link.
+(b) Página com menos detalhes que a página original - sem imagens, as letras acentuadas foram substituídas por um losango.
+(c) Página igual à original.
+(d) Página com erro.
