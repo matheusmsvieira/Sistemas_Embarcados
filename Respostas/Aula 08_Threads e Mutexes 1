@@ -1,0 +1,53 @@
+
+1 - Quais são as vantagens e desvantagens em utilizar:
+
+(a) fork?
+R - Sua criação e terminação é mais lenta, assim como a comutação de contexto entre dois processos e a comunicação. Além de que a multi-programação é mais complexa usando múltiplos processos.
+
+(b) threads?
+R - Sua criação e terminação é em geral mais rápida, a comutação de contexto entre duas threads é mais rápido, a comunicação entre threads é mais rápida e a multi-programação usando o modelo de threads é mais simples e mais portável.
+
+2 - Quantas threads serão criadas após as linhas de código a seguir? Quantas coexistirão? Por quê?
+
+(a)
+
+void* funcao_thread_1(void *arg);
+void* funcao_thread_2(void *arg);
+
+int main (int argc, char** argv)
+{
+	pthread_t t1, t2;
+	pthread_create(&t1, NULL, funcao_thread_1, NULL);
+	pthread_create(&t2, NULL, funcao_thread_2, NULL);
+	pthread_join(t1, NULL);
+	pthread_join(t2, NULL);
+	return 0;
+}
+
+R - Serão criadas duas e ambas coexistiram devido à posição do join.
+
+(b)
+
+void* funcao_thread_1(void *arg);
+void* funcao_thread_2(void *arg);
+
+int main (int argc, char** argv)
+{
+	pthread_t t1, t2;
+	pthread_create(&t1, NULL, funcao_thread_1, NULL);
+	pthread_join(t1, NULL);
+	pthread_create(&t2, NULL, funcao_thread_2, NULL);
+	pthread_join(t2, NULL);
+	return 0;
+}
+R - Duas serão criadas, mas apenas uma coexistirá por causa da posição do join.
+
+3 - Apresente as características e utilidades das seguintes funções:
+
+(a) pthread_setcancelstate()
+R - seta a estado de cancelabilidade da chamada do thread para o valor dado no state. O estado anterior de cancelabilidade da thread retorna ao buffer pelo oldstate.
+ 
+(b) pthread_setcanceltype()
+R - Seta o tipo de cancelabilidade do chamado da thread para o valor dado em type. O tipo anterior de cancelabilidade da thread retorna ao buffer pelo oldtype.
+
+(DICA: elas são relacionadas à função pthread_cancel().)
