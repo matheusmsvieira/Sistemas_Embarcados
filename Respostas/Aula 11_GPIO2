@@ -1,0 +1,12 @@
+1. Defina qual modelo de Raspberry Pi você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+R - Raspberry Pi 3 model B, porque ele se destaca pelo aumento de performance e tecnologia embarcada. Além de que, foi incluso interfaces sem fio de diversos tipos, tais como Bluetooth e Wi-fi (item que será necessário ao projeto).
+ 
+2. Defina qual sistema operacional você utilizará no projeto desta disciplina com o Raspberry Pi. Justifique sua escolha.
+R - Raspbian, pois é uma versão bem completa que permite navegar na internet e possui uma grande quantidade de ferramentas de configuração do computador e de desenvolvimento.
+
+3. Defina de qual forma você instalará o sistema operacional escolhido. Escreva o passo-a-passo da instalação e forneça os links necessários para isto.
+R - Para a instalação do sistema operacional Raspbian, foi necessário formatar um cartão SD para formato FAT. Logo após, baixou-se o Raspbian no próprio site do Raspberry Pi: https://www.raspberrypi.org/downloads/.
+Então, descompactou-se a pasta e copiou os arquivos para o cartão SD. Este cartão foi acoplado à Raspberry, então quando ligado a um monitor, teclado e mouse foi possvel realizar a instalação e setar suas configurações.
+
+4. Defina de qual forma você desenvolverá software para o Raspberry Pi no projeto desta disciplina. Escreva o passo-a-passo do desenvolvimento e forneça os links necessários para isto.
+R - Basicamente para o projeto da disciplina será necessário setar as configurações de um microfone para captar a voz do indivíduo, instalar um software de reconhecimento de voz e setar os comandos de voz. 
