@@ -1,0 +1,18 @@
+1. Apresente as características e utilidades das seguintes funções:
+
+(a) `popen()`
+R - Realiza automaticamente a tarefa de criar um novo processo (fork), executar um programa em cima desse novo processo (exec*) e esperar o comando terminar (wait).
+
+(b) `pclose()`
+R - Esta função retorna o status de terminação de processos em execução. Se ocorre erro, ele retorna false.
+
+(c) `fileno()`
+R - A função fileno() retorna o descritor de arquivo inteiro associado à stream apontada pela stream.
+
+2. Quais são as vantagens e desvantagens em utilizar:
+
+(a) `popen()?`
+R - É mais fácil criar essa função para executar um processo em que deseja-se obter apenas a saída, do que utilizar a função exec*
+
+(b) `exec()?`
+R - É complicado criar um pipe e executar um processo por exec*, apenas para obter sua saída.
